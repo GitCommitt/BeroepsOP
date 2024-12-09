@@ -1,7 +1,21 @@
 @font-face {
     font-family: segoe;
-    src: url(segoe-ui-this/segoeuithis.ttf);
+    src: url(../segoe-ui-this/segoeuithibd.ttf);
 }
+
+
+h2{
+    font-size: 50px;
+}
+footer{
+    
+    font-size: 20px;
+  }
+  
+  *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+  }
 
 body {
     margin: 0;
@@ -19,12 +33,14 @@ header {
     background-color: #ddd;
     padding: 10px;
     border-radius: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;   
 }
 
 h1 {
     font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 a {
     text-decoration: none;
@@ -76,6 +92,7 @@ a {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .type2 {
@@ -84,15 +101,13 @@ a {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .title-mid {
     font-size: 40px;
 }
 
-.text-info {
-    font-family: segoe;
-}
 
 img {
     width: 750px;
@@ -111,12 +126,12 @@ li::marker {
     font-size: 3.6em;
 }
 
-#myImg {
+.myImg {
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {
+.myImg:hover {
     opacity: 0.7;
 }
 
@@ -205,4 +220,5 @@ footer {
     border-radius: 30px;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

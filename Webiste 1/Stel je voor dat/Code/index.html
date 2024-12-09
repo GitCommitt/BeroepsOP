@@ -10,68 +10,105 @@
 </head>
 
 <body>
-  <header>
-    <h1>Over mij</h1>
+  <div>
+      <header>
+          <h1>Mijn MA</h1>
 
-    <a href="index.html">
-      <button class="button-63" role="button">Over Mij</button>
-    </a>
 
-    <a href="index2.html">
-      <button class="button-63" role="button">Mijn MA</button>
-    </a>
+          <a href="index.html">
+              <button class="button-63" role="button">Over Mij</button>
+          </a>
 
-  </header>
+          <a href="index2.html">
+              <button class="button-63" role="button">Mijn MA</button>
+          </a>
 
-  <table>
-    <tr>
-      <th><img class="img1" src="index1/img/zaandam.png"></th>
-      <th>
-        <h4>Daan Pronk</h4>
-        </h4><br>Mijn naam is daan pronk 16 jaar oud en ik heb 1 zus en ouders met 2 katten
-      </th>
-    </tr>
-    <tr>
-      <td>
-        <h6>Zaandam</h6><br>Zaandam is een mooie stad met veel gebouwen ik woon er al me hele leven!
-      </td>
-      <td><img class="img2" src="index1/img/foto1.jpg"><br> <br> </td>
-    </tr>
-    <tr>
-      <td>
-        <h3>
-          <h6>Mijn vrije tijd</h6>
-        </h3>
-        <img class="img3" src="index1/img/gamen.jpg">
-      </td>
-      <td>in mijn vrije tijd game ik vaak eigenlijk is dat altijd zo en ga ik ook naar werk om geld te verdienen</td>
-    </tr>
-    <tr>
-      <td>
-        <h6>Mijn kennis</h6><br> <br>Ik kan goed lezen en luisteren in het leven ik vind dat ook super leuk.<br> ook
-        game ik veel en doe ik eigenlijk van alles.
-      </td>
-      <td>
-        <ul>
-          <ul><b>Top 10......</b></ul>
-          <li>Klaasje</li>
-          <li>Pieter post</li>
-          <li>Katty Parry</li>
-          <li>Spotify</li>
-          <li>Youtube</li>
-          <li>Gamen</li>
-          <li>Zwemmen</li>
-          <li>Fietsen</li>
-          <li>Bruno Mars</li>
-          <li>Sven Kramer</li>
-        </ul>
-      </td>
-      <td><img class="img4" src="index1/img/lezen.jpg"></td>
-    </tr>
-  </table>
+      </header>
+      <div>
+          <div class="grid-container">
+              <div class="type1">
+                  <p class="text-info"></p>
+                  <img class="myImg" id="img1" src="index1/img/zaandam.png">
+              </div>
+              <div class="type2">
+                  <h2 class="title-mid">Daan Pronk</h2>
+                  <p class="text-info">Mijn naam is daan pronk 16 jaar oud en ik heb 1 zus en ouders met 2 katten</p>
+                  <img class="myImg" id="img2" src="index1/img/foto1.jpg" alt="">
+              </div>
+              <div class="type1">
+                  <h2 class="title-mid">Zaandam</H2>
+                  <p class="text-info">Zaandam is een mooie stad met veel gebouwen ik woon er al me hele leven!</p>              </div>
+              <div class="type2">
+                  <p class="text-info"></p>
+              </div>
+              <div class="type1">
+                  <h2 class="title-mid">Mijn vrije tijd</h2>
+                  <p class="text-info"></p>
+                  <img class="myImg" id="img3" src="index1/img/gamen.jpg"alt="">
+              </div>
+              <div class="type2">
+                <p class="text-info">in mijn vrije tijd game ik vaak eigenlijk is dat altijd zo en ga ik ook naar werk om geld te verdienen</p>
+            </div>
+              <div class="type1">
+                <h2 class="title-mid">Mijn kennis</h2>
+                <p class="text-info">Ik kan goed lezen en luisteren in het leven ik vind dat ook super leuk.<br> ook
+                  game ik veel en doe ik eigenlijk van alles.</p>
+            </div>
+            <div class="type2">
+              <p class="text-info"></p>
+              <p id="top">Top 10 .......</p>
+              <ul>
+                <li>Klaasje</li>
+                <li>Pieter post</li>
+                <li>Katty Parry</li>
+                <li>Spotify</li>
+                <li>Youtube</li>
+                <li>Gamen</li>
+                <li>Zwemmen</li>
+                <li>Fietsen</li>
+                <li>Bruno Mars</li>
+                <li>Sven Kramer</li>
+            </ul></p>
+          </div>
+          </div>
 
+
+          <div id="myModal" class="modal">
+
+              <span class="close">&times;</span>
+
+              <img class="modal-content" id="img01">
+
+              <div id="caption"></div>
+          </div>
+      </div>
+  </div>
+  </div>
+  </div>
 
   <footer>Copyright 2024 - Daan Pronk</footer>
 </body>
+
+<script>
+  var modal = document.getElementById("myModal");
+
+  var imgs = document.getElementsByClassName("myImg");
+  var modalImg = document.getElementById("img01");
+
+  for (let i = 0; i < imgs.length; i++) {
+      imgs[i].onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+  }
+
+
+  var span = document.getElementsByClassName("close")[0];
+
+  span.onclick = function () {
+      modal.style.display = "none";
+  }
+</script>
 
 </html>
